@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "eu.nulegal/recht",
+  "title": "nu:legal Deutsches Recht",
+  "description": "German federal and Land statutes plus court decisions for agents. Keyless, read-only, CC BY 4.0.",
+  "version": "1.0.1",
+  "websiteUrl": "https://recht.nulegal.eu/developers",
+  "icons": [
+    {
+      "src": "https://recht.nulegal.eu/static/nulegal-icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://recht.nulegal.eu/static/nulegal-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://recht.nulegal.eu/static/nulegal-icon-256.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "256x256"
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/nulegal-startup/recht-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://recht.nulegal.eu/v1/mcp"
+    }
+  ]
+}

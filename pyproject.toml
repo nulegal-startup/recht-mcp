@@ -1,0 +1,39 @@
+[project]
+name = "recht-mcp"
+version = "1.0.1"
+description = "MCP server for German federal and Land statutes and case law (nu:legal)"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{ name = "Nulegal GmbH" }]
+keywords = ["mcp", "model-context-protocol", "german-law", "legal", "statutes", "case-law"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Natural Language :: German",
+    "Topic :: Text Processing :: General",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://recht.nulegal.eu/developers"
+Repository = "https://github.com/nulegal-startup/recht-mcp"
+
+[project.scripts]
+recht-mcp = "recht_mcp.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/recht_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: calls the public API at recht.nulegal.eu (opt in with RECHT_MCP_LIVE=1)"]
