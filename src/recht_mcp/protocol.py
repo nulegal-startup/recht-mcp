@@ -49,7 +49,7 @@ SERVER_NAME = "nulegal-recht"
 SERVER_TITLE = "nu:legal Deutsches Recht"
 #: Bumped when the TOOL CONTRACT or the registry entry changes, not when the
 #: corpus does. Kept equal to `version` in server.json.
-SERVER_VERSION = "1.0.1"
+SERVER_VERSION = "1.0.2"
 SERVER_DESCRIPTION = ("German federal and Land statutes plus court decisions for "
                       "agents. Keyless, read-only, CC BY 4.0.")
 

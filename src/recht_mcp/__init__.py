@@ -9,4 +9,4 @@ runs it locally over the public REST API.
 Internal imports in this package are relative on purpose, so the package works
 unchanged when it is copied into another code base at a pinned commit.
 """
-__version__ = "1.0.1"
+__version__ = "1.0.2"
