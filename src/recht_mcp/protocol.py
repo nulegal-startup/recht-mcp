@@ -49,9 +49,9 @@ SERVER_NAME = "nulegal-recht"
 SERVER_TITLE = "nu:legal Deutsches Recht"
 #: Bumped when the TOOL CONTRACT or the registry entry changes, not when the
 #: corpus does. Kept equal to `version` in server.json.
-SERVER_VERSION = "1.0.2"
+SERVER_VERSION = "1.0.3"
 SERVER_DESCRIPTION = ("German federal and Land statutes plus court decisions for "
-                      "agents. Keyless, read-only, CC BY 4.0.")
+                      "agents. Keyless, read-only.")
 
 #: Largest request body accepted over HTTP, in bytes.
 MAX_BODY = 1_000_000

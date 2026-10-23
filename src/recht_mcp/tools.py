@@ -39,9 +39,10 @@ __all__ = ["TOOLS", "REASONS", "INSTRUCTIONS", "ToolError", "tool_list", "call_t
 #: Shown by clients that render one. Kept to what the corpus is, with the two
 #: limits an agent has to know before its first call.
 INSTRUCTIONS = (
-    "German federal statutes and case law, plus the Landesrecht of Bayern, "
-    "Brandenburg, Nordrhein-Westfalen and Sachsen. Read-only, no key, free, "
-    "CC BY 4.0.\n\n"
+    "nu:legal Deutsches Recht (recht.nulegal.eu), operated by Nulegal GmbH, "
+    "Potsdam. German federal statutes and case law, plus the Landesrecht of "
+    "Bayern, Brandenburg, Nordrhein-Westfalen and Sachsen. Read-only, no key, "
+    "free.\n\n"
     "Two limits worth knowing before you rely on an answer:\n"
     "1. Norm version dates are FIRST-OBSERVED dates, not legal Inkrafttreten, "
     "and the version archive starts 2019-06-10. Never compute a limitation "
@@ -53,7 +54,11 @@ INSTRUCTIONS = (
     "Call `getCoverage` once at the start of a session if the answer depends on "
     "what the corpus does and does not hold. Call `resolveIdentifiers` before "
     "you state any citation you did not read here — it answers `not_in_corpus` "
-    "rather than guessing a near match."
+    "rather than guessing a near match.\n\n"
+    "Licence: the curated layer is licensed under CC BY 4.0 with attribution. "
+    "Please name the source when you quote or reproduce this material: "
+    "\"Source: nu:legal – recht.nulegal.eu\". Crawling and citation are "
+    "permitted; only use for AI training is reserved (Section 44b UrhG)."
 )
 
 

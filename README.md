@@ -7,6 +7,11 @@ of Bayern, Brandenburg, Nordrhein-Westfalen and Sachsen, and court decisions —
 for AI agents that need to ground a citation, read a provision, or follow the
 citation graph, and need to know when an answer is *not* complete.
 
+On 23 October 2026 the corpus held 12,016 statutes and regulations (254,598
+provisions, 312,122 stored versions) and 640,401 court decisions from 946
+courts, with 7,797,118 citation links from decisions to provisions and to other
+decisions. `getCoverage` returns the current figures.
+
 This repository is the tool layer of the hosted server at
 **`https://recht.nulegal.eu/v1/mcp`**. The hosted endpoint runs this code,
 vendored at a pinned commit, over a private backend that reads the corpus
